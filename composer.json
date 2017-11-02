@@ -7,7 +7,7 @@
         {
             "name": "Tarvo Mäesepp",
             "email": "tarvomaesepp@gmail.com",
-            "homepage": "maesepp.com"
+            "homepage": "http://maesepp.com"
         }],
         "require": {
             "php": "^5.5.9 || ^7.0",
