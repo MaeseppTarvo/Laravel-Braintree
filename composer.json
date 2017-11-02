@@ -11,8 +11,6 @@
         }],
         "require": {
             "php": "^5.5.9 || ^7.0",
-            "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.*",
-            "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.*",
             "graham-campbell/manager": "^2.4",
             "braintree/braintree_php": "^3.25"
         },
