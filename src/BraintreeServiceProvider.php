@@ -20,16 +20,20 @@ class BraintreeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->configure('braintree');
 
-        $path = realpath(__DIR__.'/../../config/braintree.php');
-        $this->mergeConfigFrom($path, 'braintree');
+        $this->publishes([
+            __DIR__.'/../config/braintree.php' => config_path('braintree.php'),
+        ]);
+
+        
     }
     /**
      * Register the service provider.
      */
     public function register()
     {
+        $path = realpath(__DIR__.'/../../config/braintree.php');
+        $this->mergeConfigFrom($path, 'braintree');
         $this->registerFactory();
         $this->registerManager();
         $this->registerBindings();
