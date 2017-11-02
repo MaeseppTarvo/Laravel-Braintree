@@ -25,6 +25,10 @@
             "Maesepp\\Braintree\\": "src/"
             }
         },
+        "extra": {
+            "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
         "laravel": {
             "providers": [
                 "Maesepp\\Braintree\\BraintreeServiceProvider"
